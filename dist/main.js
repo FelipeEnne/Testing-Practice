@@ -108,6 +108,17 @@ eval("function capitalize(string) {\n    let s = string.split('')\n    s[0] = s[
 
 /***/ }),
 
+/***/ "./src/ceasarCipher.js":
+/*!*****************************!*\
+  !*** ./src/ceasarCipher.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function ceasarCipher(string) {\n  string = string.split('');\n  for (let i in string) {\n    string[i] = string[i].charCodeAt(0);\n    if((string[i] >= 97 && string[i] < 122) || (string[i] >= 65 && string[i] < 90)) {\n      string[i] += 1;\n    } else if (string[i] === 122) {\n      string[i] = 97;\n    } else if (string[i] === 90) {\n      string[i] = 65;\n    }\n    string[i] = String.fromCharCode(string[i]);\n  }\n  return string.join('');\n}\n\nmodule.exports = ceasarCipher;\n\n//# sourceURL=webpack:///./src/ceasarCipher.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -116,7 +127,7 @@ eval("function capitalize(string) {\n    let s = string.split('')\n    s[0] = s[
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capitalize */ \"./src/capitalize.js\");\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_capitalize__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _reverseString__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reverseString */ \"./src/reverseString.js\");\n/* harmony import */ var _reverseString__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_reverseString__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calculator */ \"./src/calculator.js\");\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_calculator__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nconsole.log(_capitalize__WEBPACK_IMPORTED_MODULE_0___default()('string')); \nconsole.log(_reverseString__WEBPACK_IMPORTED_MODULE_1___default()('string'));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.add(1, 2));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.subtract(1, 2));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.divide(1, 2));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.multiply(1, 2));\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capitalize */ \"./src/capitalize.js\");\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_capitalize__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _reverseString__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reverseString */ \"./src/reverseString.js\");\n/* harmony import */ var _reverseString__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_reverseString__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calculator */ \"./src/calculator.js\");\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_calculator__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _ceasarCipher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ceasarCipher */ \"./src/ceasarCipher.js\");\n/* harmony import */ var _ceasarCipher__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ceasarCipher__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nconsole.log(_capitalize__WEBPACK_IMPORTED_MODULE_0___default()('string')); \nconsole.log(_reverseString__WEBPACK_IMPORTED_MODULE_1___default()('string'));\n\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.add(1, 2));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.subtract(1, 2));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.divide(1, 2));\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.multiply(1, 2));\n\nconsole.log(_ceasarCipher__WEBPACK_IMPORTED_MODULE_3___default()('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));\nconsole.log(_ceasarCipher__WEBPACK_IMPORTED_MODULE_3___default()('With space'));\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
