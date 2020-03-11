@@ -86,70 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/arrayAnalysis.js":
-/*!******************************!*\
-  !*** ./src/arrayAnalysis.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function arrayAnalysis(array) {\r\n\r\n    const avg = array.reduce((pre, cur) => cur += pre)/array.length;\r\n    const minimum = Math.min(...array);\r\n    const maximum = Math.max(...array);\r\n    const arrLenght = array.length;\r\n\r\n    result =  {\r\n        average: avg,\r\n        min: minimum,\r\n        max: maximum,\r\n        length: arrLenght\r\n    }\r\n\r\n    return result\r\n  }\r\n  \r\n  module.exports = arrayAnalysis;\n\n//# sourceURL=webpack:///./src/arrayAnalysis.js?");
-
-/***/ }),
-
-/***/ "./src/calculator.js":
-/*!***************************!*\
-  !*** ./src/calculator.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("const calculator = {\r\n  add: function (a, b) {\r\n    return a + b;\r\n  },\r\n\r\n  subtract: function (a, b) {\r\n    return a - b;\r\n  },\r\n\r\n  divide: function (a, b) {\r\n    return a / b;\r\n  },\r\n\r\n  multiply: function (a, b) {\r\n    return a * b;\r\n  }\r\n}\r\n\r\nmodule.exports = calculator;\n\n//# sourceURL=webpack:///./src/calculator.js?");
-
-/***/ }),
-
-/***/ "./src/capitalize.js":
-/*!***************************!*\
-  !*** ./src/capitalize.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function capitalize(string) {\r\n    let s = string.split('')\r\n    s[0] = s[0].toUpperCase()\r\n\r\n    return s.join('');\r\n}\r\n\r\nmodule.exports = capitalize;\r\n\n\n//# sourceURL=webpack:///./src/capitalize.js?");
-
-/***/ }),
-
-/***/ "./src/ceasarCipher.js":
-/*!*****************************!*\
-  !*** ./src/ceasarCipher.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function ceasarCipher(string) {\r\n  string = string.split('');\r\n  for (let i in string) {\r\n    string[i] = string[i].charCodeAt(0);\r\n    if((string[i] >= 97 && string[i] < 122) || (string[i] >= 65 && string[i] < 90)) {\r\n      string[i] += 1;\r\n    } else if (string[i] === 122) {\r\n      string[i] = 97;\r\n    } else if (string[i] === 90) {\r\n      string[i] = 65;\r\n    }\r\n    string[i] = String.fromCharCode(string[i]);\r\n  }\r\n  return string.join('');\r\n}\r\n\r\nmodule.exports = ceasarCipher;\n\n//# sourceURL=webpack:///./src/ceasarCipher.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capitalize */ \"./src/capitalize.js\");\n/* harmony import */ var _capitalize__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_capitalize__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _reverseString__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reverseString */ \"./src/reverseString.js\");\n/* harmony import */ var _reverseString__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_reverseString__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calculator */ \"./src/calculator.js\");\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_calculator__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _ceasarCipher__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ceasarCipher */ \"./src/ceasarCipher.js\");\n/* harmony import */ var _ceasarCipher__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ceasarCipher__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _arrayAnalysis__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./arrayAnalysis */ \"./src/arrayAnalysis.js\");\n/* harmony import */ var _arrayAnalysis__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_arrayAnalysis__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(_capitalize__WEBPACK_IMPORTED_MODULE_0___default()('string')); \r\nconsole.log(_reverseString__WEBPACK_IMPORTED_MODULE_1___default()('string'));\r\n\r\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.add(1, 2));\r\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.subtract(1, 2));\r\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.divide(1, 2));\r\nconsole.log(_calculator__WEBPACK_IMPORTED_MODULE_2___default.a.multiply(1, 2));\r\n\r\nconsole.log(_ceasarCipher__WEBPACK_IMPORTED_MODULE_3___default()('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));\r\nconsole.log(_ceasarCipher__WEBPACK_IMPORTED_MODULE_3___default()('With space'));\r\n\r\n\r\nconsole.log(_arrayAnalysis__WEBPACK_IMPORTED_MODULE_4___default()([1,8,3,4,2,6]));\r\nconsole.log(_arrayAnalysis__WEBPACK_IMPORTED_MODULE_4___default()([1,8,3,4,2,6]).average);\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/reverseString.js":
-/*!******************************!*\
-  !*** ./src/reverseString.js ***!
-  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function reverseString(string) {\r\n  string = string.split(\"\");\r\n  let arr = [];\r\n  for(let i = 0; i < string.length; i++) {\r\n    arr.unshift(string[i]);\r\n  }\r\n  return arr.join('');\r\n}\r\n\r\nmodule.exports = reverseString;\n\n//# sourceURL=webpack:///./src/reverseString.js?");
+eval("// import capitalize from './capitalize';\n// import reverseString from './reverseString';\n// import calculator from './calculator';\n// import ceasarCipher from './ceasarCipher';\n// import arrayAnalysis from './arrayAnalysis';\n\n// console.log(capitalize('string'));\n// console.log(reverseString('string'));\n\n// console.log(calculator.add(1, 2));\n// console.log(calculator.subtract(1, 2));\n// console.log(calculator.divide(1, 2));\n// console.log(calculator.multiply(1, 2));\n\n// console.log(ceasarCipher('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));\n// console.log(ceasarCipher('With space'));\n\n\n// console.log(arrayAnalysis([1, 8, 3, 4, 2, 6]).average);\n// console.log(arrayAnalysis([1, 8, 3, 4, 2, 6]));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

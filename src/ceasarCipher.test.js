@@ -13,7 +13,7 @@ test('Test 3 - 0 to 9', () => {
 });
 
 test('Test 4 - Punctuation', () => {
-  expect(ceasarCipher(".,:;~/\^'`")).toBe(".,:;~/\^'`");
+  expect(ceasarCipher(".,:;~/^'`")).toBe(".,:;~/^'`");
 });
 
 test('Test 5 - With space', () => {
