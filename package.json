@@ -1,0 +1,27 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "Introduction to the use of Jest.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "npx-fix": "npx eslint src/  --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeEnne/Testing-Practice.git"
+  },
+  "author": "Felipe Enne and Raphael Cordeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FelipeEnne/Testing-Practice/issues"
+  },
+  "homepage": "https://github.com/FelipeEnne/Testing-Practice#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
