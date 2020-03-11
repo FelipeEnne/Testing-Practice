@@ -1,6 +1,10 @@
-function capitalize(string) {
-    let s = string.split('')
-    s[0] = s[0].toUpperCase()
+import capitalize from './capitalize';
+import reverseString from './reverseString';
+import calculator from './calculator';
 
-    return s.join('');
-}
+console.log(capitalize('string')); 
+console.log(reverseString('string'));
+console.log(calculator.add(1, 2));
+console.log(calculator.subtract(1, 2));
+console.log(calculator.divide(1, 2));
+console.log(calculator.multiply(1, 2));
