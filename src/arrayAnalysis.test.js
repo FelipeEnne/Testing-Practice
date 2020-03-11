@@ -10,11 +10,9 @@ test('Test 2 - Verify the minimum', () => {
   expect(object.min).toBe(1);
 });
 
-
 test('Test 3 - Verify the maximum', () => {
   expect(object.max).toBe(8);
 });
-
 
 test('Test 4 - Verify the length', () => {
   expect(object.length).toBe(6);
