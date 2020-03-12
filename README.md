@@ -1,4 +1,4 @@
-<br />
+<br>
 <h1 align="center">Testing Practice</h1>
 
 
