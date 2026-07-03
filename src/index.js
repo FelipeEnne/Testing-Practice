@@ -15,6 +15,5 @@
 // console.log(ceasarCipher('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'));
 // console.log(ceasarCipher('With space'));
 
-
 // console.log(arrayAnalysis([1, 8, 3, 4, 2, 6]).average);
 // console.log(arrayAnalysis([1, 8, 3, 4, 2, 6]));

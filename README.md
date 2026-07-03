@@ -9,7 +9,7 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Run This App](#run-this-app)
+* [Getting Started](#getting-started)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -18,31 +18,55 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Testing practice is a project where we use Jest to test some some JavaScript algorithms.
+Testing Practice is a project where we use Jest to test some JavaScript algorithms.
 
-The algorithms
+The algorithms:
 
-* Capitalize - Where the first character of a string is captalized.
-* Reverse String - Where a string is reversed 
-* Calculator - Works with add, subtract, divide and multiply
-* [Ceasar Cipher](http://practicalcryptography.com/ciphers/caesar-cipher/) - Decript a string
-* Array Analysis - Return an object that contains average, min, max and length of an array.
+* **Capitalize** – Capitalizes the first character of a string.
+* **Reverse String** – Reverses a string.
+* **Calculator** – Supports add, subtract, divide, and multiply.
+* **[Caesar Cipher](http://practicalcryptography.com/ciphers/caesar-cipher/)** – Encrypts a string using a Caesar cipher.
+* **Array Analysis** – Returns an object with the average, min, max, and length of an array.
+
+Full task description: [The Odin Project – Testing Practice](https://www.theodinproject.com/lessons/javascript-testing-practice).
 
 
-Full task description: <a href="https://www.theodinproject.com/courses/javascript/lessons/testing-practice"> Odin Project.</a>
-
-
-### Built With 
+### Built With
 
 * Git
-* Github
-* JavaScritp
+* GitHub
+* JavaScript
 * Jest
+* Webpack
+* ESLint
 
 
-## Run This App
+## Getting Started
 
-<p>Just open the dist/index.html file.</p>
+### Prerequisites
+
+* [Node.js](https://nodejs.org/) (LTS recommended)
+* npm (comes with Node.js)
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the tests
+
+```bash
+npm test
+```
+
+### Optional scripts
+
+```bash
+npm run build   # Bundle with Webpack
+npm run watch   # Rebuild on file changes
+npm run npx-fix  # Auto-fix lint issues in src/
+```
 
 
 ## License
@@ -57,4 +81,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* <a href="https://www.microverse.org/"> Microverse</a>  and <a href="https://www.theodinproject.com/"> Odin Project</a> .
+* [Microverse](https://www.microverse.org/) and [The Odin Project](https://www.theodinproject.com/).
